@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Lambodaran Vinayagamurthi - Fullstack Developer</title>
+  <title>Lambodaran Vinayagamurthi - Portfolio</title>
   <meta content="Portfolio of Lambodaran Vinayagamurthi, a Software Engineering student and Fullstack Developer intern skilled in Java, Python, and web development." name="description">
   <meta content="Lambodaran Vinayagamurthi, Fullstack Developer, Software Engineer, Java, Python, Portfolio" name="keywords">
 
@@ -29,42 +29,6 @@
 
   <!-- Custom CSS -->
   <style>
-    .hero {
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-    }
-    .about {
-      background: linear-gradient(to right, #f5f7fa 0%, #c3cfe2 100%);
-      padding: 60px 0;
-    }
-    .skills {
-      background: linear-gradient(to bottom, #ffffff 0%, #e5e7eb 100%);
-      padding: 60px 0;
-    }
-    .resume {
-      background: linear-gradient(to right, #e6e9f0 0%, #eef1f5 100%);
-      padding: 60px 0;
-    }
-    .contact {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      padding: 60px 0;
-      color: white;
-    }
-    .about-icons {
-      font-size: 2.5rem;
-      margin-right: 1rem;
-    }
-    .info-item {
-      align-items: center;
-    }
-    .section-title h2 {
-      margin-bottom: 20px;
-    }
-    .skills-content {
-      justify-content: center;
-    }
     .portfolio {
       background: linear-gradient(to bottom, rgba(240, 244, 248, 0.9), rgba(217, 226, 236, 0.9)), url('assets/img/portfolio-bg.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -86,7 +50,7 @@
       overflow: hidden;
       background: #fff;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      height: 100%;
+      height: 100%; /* Ensure cards stretch to same height */
       display: flex;
       flex-direction: column;
     }
@@ -100,7 +64,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 220px;
+      min-height: 220px; /* Fixed height for consistency */
     }
     .portfolio-card .card-title {
       font-size: 1.5rem;
@@ -140,7 +104,7 @@
       color: #2a5298;
     }
     .portfolio-skills-heading {
-      margin-top: 60px;
+      margin-top: 60px; /* Increased spacing before Professional Skills Portfolio */
     }
     @media (max-width: 768px) {
       .portfolio-card {
@@ -150,57 +114,10 @@
         font-size: 1.8rem;
       }
       .portfolio {
-        background-attachment: scroll;
+        background-attachment: scroll; /* Fixed background can be problematic on mobile */
       }
       .portfolio-skills-heading {
-        margin-top: 40px;
-      }
-    }
-    /* New CSS for Resume Section Improvements */
-    .resume-container {
-      background: rgba(255, 255, 255, 0.8); /* Subtle background for contrast */
-      border-radius: 10px;
-      padding: 30px;
-    }
-    .resume-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #dee2e6; /* Thin border for definition */
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px; /* Increased spacing */
-      overflow: hidden;
-    }
-    .resume-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    }
-    .resume-card .card-body {
-      padding: 25px; /* Slightly more padding */
-    }
-    .resume-card .card-title {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #1e3c72;
-      margin-bottom: 15px;
-    }
-    .resume-card .card-subtitle {
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: #2a5298;
-      margin-bottom: 10px;
-    }
-    .resume-card p {
-      font-size: 1rem;
-      color: #333;
-      line-height: 1.6;
-    }
-    @media (max-width: 768px) {
-      .resume-card {
-        margin-bottom: 20px;
-      }
-      .resume-container {
-        padding: 20px;
+        margin-top: 40px; /* Reduced spacing for mobile */
       }
     }
   </style>
@@ -212,189 +129,23 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#skills"><i class="bi bi-gear navicon"></i><span>Skills</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="index.html#skills"><i class="bi bi-gear navicon"></i><span>Skills</span></a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="Portfolio.html" class="active"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <div class="container text-center" data-aos="zoom-out">
-        <h2>Lambodaran Vinayagamurthi</h2>
-        <p>I'm <span class="typed" data-typed-items="Fullstack Developer, Software Engineer, Tech Enthusiast">Fullstack Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <div class="social-links mt-4">
-          <a href="https://github.com/Lambodaran"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/lambodaran"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>About</h2>
-        <p>I am pursuing a degree in Software Engineering at the University of Bedfordshire at SLIIT Northern Uni. I have a good understanding of programming, system design, and software development. I am eager to apply my knowledge to real-world problems.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 content text-center">
-            <h2>Fullstack Developer Intern</h2>
-            <p class="fst-italic py-3">
-              With a passion for learning and innovation, I aim to grow in fast-changing, technology-driven environments.
-            </p>
-            <div class="row justify-content-center">
-              <div class="col-lg-6 col-md-6">
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-envelope about-icons"></i>
-                  <div>
-                    <h4>Email</h4>
-                    <p><a href="mailto:vinajagamoorthylambotharan@gmail.com?subject=Contact%20from%20Portfolio%20Website">vinajagamoorthylambotharan@gmail.com</a></p>
-                  </div>
-                </div>
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-telephone about-icons"></i>
-                  <div>
-                    <h4>Phone</h4>
-                    <p>+94 770 180 881</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6">
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-github about-icons"></i>
-                  <div>
-                    <h4>GitHub</h4>
-                    <p><a href="https://github.com/Lambodaran">github.com/Lambodaran</a></p>
-                  </div>
-                </div>
-                <div class="info-item d-flex mb-4">
-                  <i class="bi bi-linkedin about-icons"></i>
-                  <div>
-                    <h4>LinkedIn</h4>
-                    <p><a href="https://www.linkedin.com/in/lambodaran">linkedin.com/in/lambodaran</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Technical Skills</h2>
-        <p>Key technical competencies and tools</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row skills-content">
-          <div class="col-lg-5 col-md-6">
-            <div class="progress">
-              <span class="skill"><span>Java</span></span>
-            </div>
-            <div class="progress">
-              <span class="skill"><span>Python</span></span>
-            </div>
-            <div class="progress">
-              <span class="skill"><span>HTML/CSS</span></span>
-            </div>
-            <div class="progress">
-              <span class="skill"><span>SQL</span></span>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-6">
-            <div class="progress">
-              <span class="skill"><span>PHP</span></span>
-            </div>
-            <div class="progress">
-              <span class="skill"><span>C/C++</span></span>
-            </div>
-            <div class="progress">
-              <span class="skill"><span>Bootstrap</span></span>
-            </div>
-            <div class="progress">
-              <span class="skill"><span>Developer Tools (VS Code, Eclipse, etc.)</span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>My educational background and projects</p>
-      </div>
-
-      <!-- Added resume-container for background and padding -->
-      <div class="container resume-container">
-        <div class="row justify-content-center">
-          <!-- Education Column -->
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <h3 class="resume-title">Education</h3>
-            <!-- Wrapped education in a card -->
-            <div class="resume-card">
-              <div class="card-body">
-                <h4 class="card-title">BSc (Hons) in Software Engineering</h4>
-                <h5 class="card-subtitle">2023 - Present</h5>
-                <p><em>University of Bedfordshire at SLIIT Northern Uni</em></p>
-              </div>
-            </div>
-          </div>
-          <!-- Projects Column -->
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <h3 class="resume-title">Projects</h3>
-            <div class="row portfolio-container">
-              <!-- Updated animations to zoom-in -->
-              <div class="col-lg-12 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="300">
-                <div class="card resume-card">
-                  <div class="card-body">
-                    <h5 class="card-title">LearnQuick</h5>
-                    <p class="card-text">Android app using Java and Firebase to enhance learning, developed for Human-Computer Interaction module (November 2024).</p>
-                    <a href="https://github.com/Lambodaran/LearnQuick-appilication" class="btn btn-primary">View Project</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="400">
-                <div class="card resume-card">
-                  <div class="card-body">
-                    <h5 class="card-title">DigitalPc</h5>
-                    <p class="card-text">Full-stack website using HTML, CSS, JavaScript, and PHP (July 2024).</p>
-                    <a href="https://github.com/Lambodaran/DigitalPc-Website" class="btn btn-primary">View Project</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-6 portfolio-item" data-aos="zoom-in" data-aos-delay="500">
-                <div class="card resume-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Shipshape</h5>
-                    <p class="card-text">Java Swing application with SQL database management (Group Project, July 2024).</p>
-                    <a href="https://github.com/rekcah-pavi/ess-frontent" class="btn btn-primary">View Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
       <div class="container section-title text-center" data-aos="fade-up" data-aos-duration="1000">
         <h2>Portfolio</h2>
-        <p>Professional Skills Showcase</p>
+        <p>Professional Skills & Project Showcase</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -408,9 +159,42 @@
               <strong>Date:</strong> March 31, 2025
             </p>
 
-            <h4 class="portfolio-skills-heading" data-aos="fade-left" data-aos-delay="500">Professional Skills Portfolio</h4>
-            <div class="accordion" id="portfolioAccordion" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="700">
+            <!-- Project Showcase -->
+            <h4 data-aos="fade-left" data-aos-delay="500">Projects</h4>
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="card portfolio-card">
+                  <div class="card-body">
+                    <h5 class="card-title">LearnQuick</h5>
+                    <p class="card-text">Android app using Java and Firebase to enhance learning, developed for Human-Computer Interaction module (November 2024).</p>
+                    <a href="https://github.com/Lambodaran/LearnQuick-appilication" class="btn btn-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="card portfolio-card">
+                  <div class="card-body">
+                    <h5 class="card-title">DigitalPc</h5>
+                    <p class="card-text">Full-stack website using HTML, CSS, JavaScript, and PHP (July 2024).</p>
+                    <a href="https://github.com/Lambodaran/DigitalPc-Website" class="btn btn-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="card portfolio-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Shipshape</h5>
+                    <p class="card-text">Java Swing application with SQL database management (Group Project, July 2024).</p>
+                    <a href="https://github.com/rekcah-pavi/ess-frontent" class="btn btn-primary">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Professional Skills Accordion -->
+            <h4 class="portfolio-skills-heading" data-aos="fade-left" data-aos-delay="700">Professional Skills Portfolio</h4>
+            <div class="accordion" id="portfolioAccordion" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     1. Professional Skills
@@ -422,7 +206,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="800">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     2. Employability Skills
@@ -434,7 +218,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="900">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     3. Values, Beliefs, Attitudes, and Character
@@ -446,7 +230,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1000">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     4. CV Writing
@@ -458,7 +242,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1100">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                     5. Interview Manners
@@ -470,7 +254,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1200">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSix">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                     6. Portfolio
@@ -482,7 +266,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1300">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSeven">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                     7. Meeting and Speaking Skills
@@ -494,7 +278,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1400">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingEight">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                     8. Email Writing Etiquette
@@ -506,7 +290,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1500">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingNine">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                     9. Proposal Writing
@@ -518,7 +302,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1600">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTen">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                     10. Team and Leadership
@@ -530,7 +314,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1700">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingEleven">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                     11. Emotional Intelligence
@@ -542,7 +326,7 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" data-aos="fade-up" data-aos-delay="1800">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingConclusion">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion" aria-expanded="false" aria-controls="collapseConclusion">
                     Conclusion
@@ -558,35 +342,6 @@
                        <strong>Date:</strong> March 31, 2025</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container section-title text-center" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Get in touch with me</p>
-      </div>
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="info-item d-flex mb-4" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-envelope flex-shrink-0 about-icons"></i>
-              <div>
-                <h3>Email</h3>
-                <p><a href="mailto:vinajagamoorthylambotharan@gmail.com?subject=Contact%20from%20Portfolio%20Website">vinajagamoorthylambotharan@gmail.com</a></p>
-              </div>
-            </div>
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0 about-icons"></i>
-              <div>
-                <h3>Phone</h3>
-                <p>+94 770 180 881</p>
               </div>
             </div>
           </div>
@@ -634,6 +389,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Custom JS for Parallax -->
+  <script>
+    // Ensure AOS initializes after page load
+    window.addEventListener('load', () => {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: false, // Animations can retrigger on scroll
+        mirror: true // Animations occur when scrolling up/down
+      });
+    });
+  </script>
 
 </body>
 </html>
